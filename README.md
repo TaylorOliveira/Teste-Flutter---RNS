@@ -27,7 +27,7 @@ Se precisar, aqui vão alguns links que podem te ajudar:
 
 ### 2.2) Mobile - Sistema Android Nativo
 
-Antes que você pergunte "por que tem flutter e android nativo se flutter é pra android também?" já te respondo: as aplicações em android nativo vieram antes do flutter e não convertemos o que havia (~~mas quem sabe isso não acontecerá num futuro...~~).
+Antes que você pergunte "por que tem flutter e android nativo se flutter é pra android também?" já te respondo: as aplicações em android nativo vieram antes do flutter e não convertemos o que havia.
 
 Vamos ao que importa: aqui você terá que implementar uma tela de listagem de produtos usando a API que modificou na primeira parte do teste.
 
