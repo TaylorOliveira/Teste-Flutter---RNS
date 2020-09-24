@@ -4,16 +4,16 @@ import 'dart:io';
 import 'package:teste_salcisne/lista_produtos/domain/entity/produto_entity.dart';
 import 'package:http/http.dart' as http;
 
-import '../domain/client/lista_produtos_client.dart';
+import '../domain/abstract//lista_produtos_client.dart';
 
 class ProdutosClientImpl implements ProdutosClient {
   final String url = 'URL';
   var client = http.Client();
 
   List<Produto> produtos = [
-    Produto(nome: "Produto 1", local: "Local A", quantidade: 20),
-    Produto(nome: "Produto 2", local: "Local B", quantidade: 18),
-    Produto(nome: "Produto 3", local: "Local C", quantidade: 16),
+    Produto(nome: "Produto 1", codigo: "321651", quantidade: 20),
+    Produto(nome: "Produto 2", codigo: "531654", quantidade: 18),
+    Produto(nome: "Produto 3", codigo: "654651", quantidade: 16),
   ];
 
   @override

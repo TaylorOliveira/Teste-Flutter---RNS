@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../bloc/lista_produtos_bloc.dart';
+import 'package:teste_salcisne/http/web_client.dart';
+import 'package:teste_salcisne/lista_produtos/domain/entity/produto_entity.dart';
 
 class ListaProdutosWidget extends StatelessWidget {
   const ListaProdutosWidget({Key key}) : super(key: key);
@@ -13,20 +12,38 @@ class ListaProdutosWidget extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
       ),
-      body: Center(
-        child: BlocBuilder<ListaProdutosBloc, ListaProdutosState>(
-          builder: (context, state) {
-            if (state is ListaProdutosInitial) {
-            } else if (state is Error) {
-            } else if (state is Loading) {
-            } else if (state is ListaCarregada) {}
+      body: FutureBuilder<List<Produto>>(
+        future: findAll(),
+        // ignore: missing_return
+        builder: (context, snapshot){
 
-            return Container(
-                child:
-                    Text("TODO: implementar a tela de listagem de produtos"));
-          },
-        ),
+          final List<Produto> produtos = snapshot.data;
+          return ListView.builder(
+              itemCount: produtos.length,
+              itemBuilder: (context, index){
+            final Produto produto = produtos[index];
+            return Card(
+              child: ListTile(
+                leading: Icon(Icons.gesture),
+                title: Text(
+                  produto.nome.toString(),
+                  style: TextStyle(
+                    fontSize: 24.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                subtitle: Text(
+                  'Código: ${produto.codigo} - Estoque: ${produto.quantidade}',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                  ),
+                ),
+              ),
+            );
+          });
+        },
       ),
     );
   }
 }
+
