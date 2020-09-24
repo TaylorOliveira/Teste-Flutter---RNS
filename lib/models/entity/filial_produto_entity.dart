@@ -1,5 +1,5 @@
-import 'package:teste_salcisne/lista_produtos/domain/entity/filial_entity.dart';
-import 'package:teste_salcisne/lista_produtos/domain/entity/produto_entity.dart';
+import 'file:///C:/Users/crp/Downloads/teste_flutter-master/teste_flutter-master/lib/models/entity/filial_entity.dart';
+import 'package:teste_salcisne/models/entity/produto_entity.dart';
 
 class FilialProduto {
   Produto produto;
