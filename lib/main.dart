@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:teste_salcisne/lista_produtos/presentation/ui/lista_produtos_page.dart';
+import 'file:///C:/Users/crp/Downloads/teste_flutter-master/teste_flutter-master/lib/screens/product/lista_produtos_list.dart';
 
 void main() {
   runApp(Application());
@@ -11,10 +11,10 @@ class Application extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: ListaProdutosPage(),
+      home: ListaProdutosWidget(),
     );
   }
 }
