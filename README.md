@@ -1,10 +1,20 @@
-## Instruções
-Listagem de produto utilizando Flutter.
+# Stock Manage - List Products
 
-### Dicas
-Se precisar, aqui vão alguns links que podem te ajudar:
+Simple product listing
 
-- [O que é Flutter](https://www.flutterparainiciantes.com.br/o-que-e-flutter)
-- [Fetch data from the internet](https://flutter.dev/docs/cookbook/networking/fetch-data)
-- [Implementing BLoC pattern using flutter_bloc](https://medium.com/flutter-community/implementing-bloc-pattern-using-flutter-bloc-62a62e0319b5)
-- [Using Clean Architecture in Flutter](https://codeburst.io/using-clean-architecture-in-flutter-d0437d0c7f87
+  - Listing Products
+  
+### Installation
+ 
+For the installation of the flutter environment access the link [Flutter](https://flutter.dev/docs/get-started/install).
+
+### Tech
+
+Technologies used
+
+* [Flutter](https://flutter.dev/docs/development/tools/sdk/release-notes/release-notes-1.12.13) - Version 1.12.13
+
+License
+----
+
+Software free
